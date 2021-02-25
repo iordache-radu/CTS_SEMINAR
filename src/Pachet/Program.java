@@ -17,6 +17,7 @@ public class Program {
         zoo.AdaugaAnimal(z1);
         zoo.AdaugaAnimal(z2);
         zoo.FeedAllAnimals();
+
     }
 
 }
