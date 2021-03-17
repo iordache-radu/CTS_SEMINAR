@@ -31,6 +31,7 @@ public class Program {
 
                 aplicant.afisareRaspunsProiect(proiect);
             }
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
