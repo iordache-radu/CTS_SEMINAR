@@ -1,3 +1,5 @@
+package lll;
+
 public abstract class PersonalSpital {
     private String nume;
 
