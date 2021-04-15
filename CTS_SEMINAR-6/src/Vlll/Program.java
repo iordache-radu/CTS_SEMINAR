@@ -25,7 +25,7 @@ public class Program {
         agentie2.addNod(filiala1);
 
         agentie3.addNod(filiala3);
-        
+
 agentie1.afiseazaDescriere();
 agentie2.afiseazaDescriere();
 
