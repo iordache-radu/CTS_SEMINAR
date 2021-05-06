@@ -1,4 +1,4 @@
-package PLATA;
+package UNSPE;
 
 public class PlataCash implements Iplata {
     @Override

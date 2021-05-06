@@ -1,4 +1,4 @@
-package PLATA;
+package UNSPE;
 
 public class Client {
     private Iplata tipPlata;
