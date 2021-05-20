@@ -87,4 +87,38 @@ assertNotNull(student.getNume());
         assertFalse(student.areRestante());
     }
 
+    @Test
+    public void testGetNotaExceptie(){
+        Student student=new Student();
+        student.adaugaNota(9);
+        student.adaugaNota(7);
+
+
+        try{
+            student.getNota(5);
+            fail("nu trebuia ajuns aici. Metoda nu arunca exceptie");
+        }catch(IndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
+
+
+    }
+
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetNotaExceptieV4(){
+        Student student=new Student();
+        student.adaugaNota(9);
+        student.adaugaNota(7);
+student.getNota(5);
+    }
+
+//    @Test
+//    public void testGetNotaExceptieV5(){
+//        Student student=new Student();
+//        student.adaugaNota(9);
+//        student.adaugaNota(7);
+//        assertThrows(IndexOutOfBoundsException.class,()->{student.getNota(5);});
+//    }
+
 }
