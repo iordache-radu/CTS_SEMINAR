@@ -2,11 +2,13 @@ package Test;
 import Clase.Grupa;
 import Clase.IStudent;
 import Clase.Student;
+import Test.Categori.GetPromovabilitateCategory;
 import Test.Dubluri.DummyStudent;
 import Test.Dubluri.FakeStudent;
 import Test.Dubluri.StubStudent;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +28,7 @@ public class TestGrupaMock {
 
 
     @Test
+    @Category(GetPromovabilitateCategory.class)
     public void testGetPromovabilitate(){
         IStudent student=new StubStudent();
         Grupa grupa=new Grupa(1081);
@@ -35,6 +38,7 @@ public class TestGrupaMock {
 
 
     @Test
+    @Category(GetPromovabilitateCategory.class)
     public void testGetPromovabilitateFakeStudent(){
         Grupa grupa=new Grupa(1081);
         for(int i=0;i<8;i++){

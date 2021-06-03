@@ -3,8 +3,11 @@ package Test;
 import Clase.Grupa;
 import Clase.IStudent;
 import Clase.Student;
+import Test.Categori.GetPromovabilitateCategory;
+import Test.Categori.TesteUrgente;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
@@ -30,6 +33,7 @@ public class GrupaTestFixture {
     }
 
     @Test(timeout = 500)
+    @Category({GetPromovabilitateCategory.class, TesteUrgente.class})
     public void testGetPromovabilitatePerformance(){
 
         grupa.getPromovabilitate();
